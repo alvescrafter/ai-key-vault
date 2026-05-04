@@ -19,7 +19,7 @@ Securely store and copy your AI API keys with AES-256-GCM encryption. Keys are e
 
 ### Step 1 — Download
 
-1. Go to the [GitHub repository](https://github.com/) and click the green **Code** button
+1. Go to the [GitHub repository](https://github.com/alvescrafter/ai-key-vault) and click the green **Code** button
 2. Select **Download ZIP**
 3. Extract the ZIP file to a folder on your computer (e.g., your Desktop)
 
