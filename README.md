@@ -15,35 +15,7 @@ Securely store and copy your AI API keys with AES-256-GCM encryption. Keys are e
 
 ---
 
-## 🚀 Installation (Easiest Method)
-
-### Step 1 — Download
-
-1. Go to the [GitHub repository](https://github.com/alvescrafter/ai-key-vault) and click the green **Code** button
-2. Select **Download ZIP**
-3. Extract the ZIP file to a folder on your computer (e.g., your Desktop)
-
-> 💡 **Tip:** Remember where you extract it — Chrome needs the folder to stay in place while the extension is installed. Don't delete it!
-
-### Step 2 — Install in Chrome
-
-1. Open Chrome and type **`chrome://extensions`** in the address bar, then press Enter
-2. Turn on **Developer mode** (toggle switch in the top-right corner)
-3. Click **Load unpacked** (top-left button)
-4. Select the extracted folder (the one containing `manifest.json`)
-5. The 🔐 **AI Key Vault** icon will appear in your extensions toolbar
-
-> ⚠️ **Important:** The folder must stay where it is. If you move or delete it, the extension will stop working.
-
-### Step 3 — Pin the Extension
-
-1. Click the **puzzle piece** icon in Chrome's toolbar (top-right)
-2. Find **AI Key Vault** in the list
-3. Click the **pin** icon to keep it visible in your toolbar
-
----
-
-## 📖 How to Use
+##  How to Use
 
 ### First Time Setup
 
@@ -113,26 +85,7 @@ Press **`Ctrl+Shift+K`** (or **`Cmd+Shift+K`** on Mac) on any page to toggle the
 
 ---
 
-## 📁 File Structure
-
-```
-├── manifest.json          — Extension manifest (MV3)
-├── background.js          — Service worker: message routing, auto-lock, session restore
-├── crypto.js              — AES-256-GCM encryption engine (Web Crypto API)
-├── vault.js               — Secure storage layer (encrypt/decrypt/persist)
-├── content.js             — Site detection, floating widget, key copy
-├── popup.html             — Extension popup UI
-├── popup.js               — Popup interaction logic
-├── generate-icons.js      — Icon generation script (run once)
-├── icons/
-│   ├── icon16.png         — 16×16 toolbar icon
-│   ├── icon48.png         — 48×48 extension page icon
-│   ├── icon128.png        — 128×128 Chrome Web Store icon
-│   └── icon.svg           — Source SVG for icons
-└── README.md              — This file
-```
-
-## 🔧 Permissions Explained
+##  Permissions Explained
 
 | Permission | Why |
 |-----------|-----|
