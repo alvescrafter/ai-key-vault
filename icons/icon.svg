@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4361ee"/>
+      <stop offset="100%" style="stop-color:#7ec8e3"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="url(#bg)" stroke="#0f3460" stroke-width="2"/>
+  <!-- Lock body -->
+  <rect x="38" y="58" width="52" height="40" rx="6" fill="url(#accent)" opacity="0.9"/>
+  <!-- Lock shackle -->
+  <path d="M 46 58 L 46 42 C 46 28 54 20 64 20 C 74 20 82 28 82 42 L 82 58" 
+        fill="none" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+  <!-- Keyhole -->
+  <circle cx="64" cy="72" r="6" fill="#1a1a2e"/>
+  <rect x="61" y="72" width="6" height="14" rx="2" fill="#1a1a2e"/>
+</svg>
