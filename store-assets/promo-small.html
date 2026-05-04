@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Key Vault — Small Promo Tile (440×280)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 440px; height: 280px; overflow: hidden; }
+    .tile {
+      width: 440px; height: 280px; background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif; color: #e0e0e0;
+      position: relative;
+    }
+    .icon { font-size: 64px; margin-bottom: 12px; }
+    .title { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { font-size: 14px; color: #7ec8e3; margin-bottom: 16px; }
+    .features { display: flex; gap: 16px; }
+    .feature {
+      background: #16213e; border: 1px solid #0f3460; border-radius: 8px;
+      padding: 8px 14px; font-size: 12px; color: #e0e0e0;
+    }
+    .glow {
+      position: absolute; width: 200px; height: 200px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(67,97,238,0.15) 0%, transparent 70%);
+      top: -40px; right: -40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="tile">
+    <div class="glow"></div>
+    <div class="icon">🔐</div>
+    <div class="title">AI Key Vault</div>
+    <div class="subtitle">Securely store & copy your AI API keys</div>
+    <div class="features">
+      <div class="feature">🔒 AES-256 Encrypted</div>
+      <div class="feature">📋 One-Click Copy</div>
+      <div class="feature">⏱️ Auto-Lock</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Key Vault — Screenshot: Locked</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 360px; min-height: 400px; font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f0f1a; color: #e0e0e0; display: flex; align-items: center; justify-content: center;
+    }
+    .container { padding: 16px; width: 100%; }
+    .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .top-bar a { text-decoration: none; font-size: 12px; font-weight: 600; }
+    .donate { color: #f4a261; }
+    .readme { color: #7ec8e3; }
+    h1 { font-size: 18px; margin-bottom: 16px; text-align: center; }
+    .lock-icon { font-size: 48px; text-align: center; margin: 20px 0; }
+    input[type="password"] {
+      width: 100%; padding: 10px; margin: 6px 0; background: #1a1a2e;
+      border: 1px solid #333; border-radius: 8px; color: #e0e0e0; font-size: 14px;
+    }
+    input::placeholder { color: #666; }
+    .btn {
+      width: 100%; padding: 10px; margin: 6px 0; border: none; border-radius: 8px;
+      cursor: pointer; font-size: 14px; font-weight: 600;
+    }
+    .btn-primary { background: #4361ee; color: white; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <a href="#" class="donate">☕ Donate</a>
+      <a href="#" class="readme">📖 Readme</a>
+    </div>
+    <h1>🔐 AI Key Vault</h1>
+    <div class="lock-icon">🔒</div>
+    <input type="password" placeholder="Enter master password" value="••••••••••">
+    <button class="btn btn-primary">Unlock</button>
+  </div>
+</body>
+</html>

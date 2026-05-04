@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Key Vault — Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
+    h1 { color: #1a1a2e; border-bottom: 2px solid #4361ee; padding-bottom: 8px; }
+    h2 { color: #16213e; margin-top: 32px; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+    .last-updated { color: #888; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>🔐 AI Key Vault — Privacy Policy</h1>
+  <p class="last-updated">Last updated: May 4, 2026</p>
+
+  <h2>Data Collection</h2>
+  <p>AI Key Vault does <strong>not collect, transmit, or store any data on external servers</strong>. All data remains entirely within your browser's local storage.</p>
+
+  <h2>Data Storage</h2>
+  <p>Your API keys are encrypted with AES-256-GCM encryption and stored locally in <code>chrome.storage.local</code>. The encryption key is derived from your master password using PBKDF2 with 100,000 iterations. Your master password is <strong>never stored</strong> — only a cryptographic salt is persisted.</p>
+
+  <h2>Data Access</h2>
+  <p>Only you can access your encrypted keys by entering your master password. The extension does not send any data to external servers, APIs, or third parties.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>storage</strong> — Used to store encrypted vault data and session state locally.</li>
+    <li><strong>activeTab</strong> — Used to inject the vault widget on the current tab when you press the keyboard shortcut.</li>
+    <li><strong>scripting</strong> — Used to programmatically inject the content script on pages.</li>
+    <li><strong>alarms</strong> — Used to auto-lock the vault after 30 minutes of inactivity.</li>
+    <li><strong>host_permissions</strong> — Used to detect when you're on a supported AI site (ChatGPT, Anthropic, Google AI Studio, Groq, DeepSeek) and show the vault widget.</li>
+  </ul>
+
+  <h2>Third-Party Services</h2>
+  <p>AI Key Vault does not integrate with or send data to any third-party services, analytics platforms, or advertising networks.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If this policy changes, the updated version will be posted on this page with a new "Last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p>For questions about this privacy policy, please open an issue on our <a href="https://github.com/alvescrafter/ai-key-vault">GitHub repository</a>.</p>
+</body>
+</html>

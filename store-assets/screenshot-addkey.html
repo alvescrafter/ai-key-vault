@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Key Vault — Screenshot: Add Key Form</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 360px; min-height: 500px; font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f0f1a; color: #e0e0e0; display: flex; align-items: center; justify-content: center;
+    }
+    .container { padding: 16px; width: 100%; }
+    .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .top-bar a { text-decoration: none; font-size: 12px; font-weight: 600; }
+    .donate { color: #f4a261; }
+    .readme { color: #7ec8e3; }
+    h1 { font-size: 18px; margin-bottom: 16px; text-align: center; }
+    .header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    .header-row h2 { font-size: 16px; }
+    .btn { padding: 6px 12px; border: none; border-radius: 8px; cursor: pointer; font-size: 12px; font-weight: 600; }
+    .btn-primary { background: #4361ee; color: white; width: 100%; padding: 10px; margin: 6px 0; }
+    .btn-secondary { background: #16213e; color: #e0e0e0; border: 1px solid #333; }
+    label { font-size: 12px; color: #888; display: block; margin-top: 8px; }
+    input, select {
+      width: 100%; padding: 10px; margin: 6px 0; background: #1a1a2e;
+      border: 1px solid #333; border-radius: 8px; color: #e0e0e0; font-size: 14px;
+    }
+    input::placeholder { color: #666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <a href="#" class="donate">☕ Donate</a>
+      <a href="#" class="readme">📖 Readme</a>
+    </div>
+    <h1>🔐 AI Key Vault</h1>
+    <div class="header-row">
+      <h2>Add API Key</h2>
+      <button class="btn btn-secondary">Cancel</button>
+    </div>
+    <label>Provider</label>
+    <select>
+      <option>OpenAI</option>
+      <option>Anthropic</option>
+      <option>Google (Gemini)</option>
+      <option>Groq</option>
+      <option>DeepSeek</option>
+      <option>Custom</option>
+    </select>
+    <label>Label</label>
+    <input type="text" placeholder="e.g., My OpenAI Key" value="My OpenAI Key">
+    <label>API Key</label>
+    <input type="password" placeholder="sk-..." value="sk-proj-xxxxxxxxxxxxxxxxxxxx">
+    <label>Auto-inject on these sites (comma-separated)</label>
+    <input type="text" placeholder="chat.openai.com, platform.openai.com" value="chat.openai.com, platform.openai.com">
+    <button class="btn btn-primary">Save Key</button>
+  </div>
+</body>
+</html>

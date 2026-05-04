@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Key Vault — Screenshot: Unlocked with Keys</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 360px; min-height: 500px; font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f0f1a; color: #e0e0e0; display: flex; align-items: center; justify-content: center;
+    }
+    .container { padding: 16px; width: 100%; }
+    .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .top-bar a { text-decoration: none; font-size: 12px; font-weight: 600; }
+    .donate { color: #f4a261; }
+    .readme { color: #7ec8e3; }
+    h1 { font-size: 18px; margin-bottom: 16px; text-align: center; }
+    .header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    .header-row h2 { font-size: 16px; }
+    .btn { padding: 6px 12px; border: none; border-radius: 8px; cursor: pointer; font-size: 12px; font-weight: 600; }
+    .btn-secondary { background: #16213e; color: #e0e0e0; border: 1px solid #333; }
+    .btn-primary { background: #4361ee; color: white; }
+    .btn-danger { background: #e63946; color: white; }
+    .btn-small { padding: 6px 12px; font-size: 12px; width: auto; }
+    .copy-btn { background: #4361ee; color: white; }
+    .key-card { background: #16213e; border: 1px solid #0f3460; border-radius: 8px; padding: 12px; margin: 8px 0; }
+    .key-card .label { font-weight: 600; }
+    .key-card .meta { color: #888; font-size: 12px; margin-top: 4px; }
+    .key-card .actions { margin-top: 8px; display: flex; gap: 8px; }
+    .tag { display: inline-block; background: #0f3460; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin-right: 4px; color: #7ec8e3; }
+    .divider { border-top: 1px solid #333; margin: 12px 0; }
+    .info { color: #7ec8e3; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <a href="#" class="donate">☕ Donate</a>
+      <a href="#" class="readme">📖 Readme</a>
+    </div>
+    <h1>🔐 AI Key Vault</h1>
+    <div class="header-row">
+      <h2>Your Keys</h2>
+      <button class="btn btn-secondary">🔒 Lock</button>
+    </div>
+    <div class="key-card">
+      <div class="label">My OpenAI Key</div>
+      <div class="meta">
+        <span class="tag">openai</span>
+        <span class="tag">sk-proj-...3vXk</span>
+      </div>
+      <div class="meta">chat.openai.com, platform.openai.com</div>
+      <div class="actions">
+        <button class="btn copy-btn btn-small">📋 Copy</button>
+        <button class="btn btn-danger btn-small">Delete</button>
+      </div>
+    </div>
+    <div class="key-card">
+      <div class="label">Work Claude Key</div>
+      <div class="meta">
+        <span class="tag">anthropic</span>
+        <span class="tag">sk-ant-...m7Qp</span>
+      </div>
+      <div class="meta">console.anthropic.com</div>
+      <div class="actions">
+        <button class="btn copy-btn btn-small">📋 Copy</button>
+        <button class="btn btn-danger btn-small">Delete</button>
+      </div>
+    </div>
+    <div class="key-card">
+      <div class="label">Google Gemini</div>
+      <div class="meta">
+        <span class="tag">google</span>
+        <span class="tag">AIzaSyB...9xLm</span>
+      </div>
+      <div class="meta">aistudio.google.com</div>
+      <div class="actions">
+        <button class="btn copy-btn btn-small">📋 Copy</button>
+        <button class="btn btn-danger btn-small">Delete</button>
+      </div>
+    </div>
+    <button class="btn btn-primary" style="width:100%;margin-top:12px;">+ Add Key</button>
+    <div class="divider"></div>
+    <div class="info">Auto-locks after 30 minutes of inactivity.<br>Press Ctrl+Shift+K on any AI site to copy keys.</div>
+  </div>
+</body>
+</html>
